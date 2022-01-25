@@ -1,0 +1,21 @@
+import time
+import random
+import tweepy
+import json
+
+#with open('twitterauth.json') as file:
+ #   secrets = json.load(file)
+
+#auth = tweepy.OAuthHandler(secrets['consumer_key'], secrets['consumer_secret'])
+#auth.set_access_token(secrets['access_token'], secrets['access_token_secret'])
+
+#twitter = tweepy.API(auth)
+
+zeit = random.randint(1,10)
+
+#twitter.update_status("Hiermit gebe ich bekannt das Dieser Tweet automatisch gesendet wurde!")
+tweet = open("tweets.txt", "r")
+
+for i in tweet:
+    print (i)
+    time.sleep(zeit)
